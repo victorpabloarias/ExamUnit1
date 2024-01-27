@@ -1,1 +1,22 @@
+//well my logic here is to code in a way that the car first will drive straight as long as the next cell of the map in front of him is empty, until reaching the goal cell.
+//if facing a wall= peek at both the right and left cells that are to both sides of the car, then, if left cell is not available, AND, the right cell is available, then turn right, then continue driving in straight line.
+// if facing a wall, if right cell is not available, AND left cell is available, then turn left, then continue driving in straight line.
+// by doing this, it will continue driving into the checkered flag at the end (goal cell), then the race ends. 
+
+
+//I guess first we start to the car peeking and driving
+
+
+class =Car
+loop this
+{
+    peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true. 
+    else= false, then stop the car.
+    if false= stop, then, check both cells to the left and right of the cell where the car is standing at. Then=  // we are assuming that the car here is facing a wall in front, or cell ahead is full.
+    if right cell= full, left cell= empty, then turn left;
+    if left cell= full, right cell= empty, then turn right.
+Then= peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true.
+}
+if= cell that the car is at =AtGoal cell= true, then game ends, else= false.
+
 

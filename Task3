@@ -1,1 +1,13 @@
+// task 3 is very similar coded as task 1
 
+class =Car
+loop this
+{
+    peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true. 
+    else= false, then stop the car.
+    if false= stop, then, check both cells to the left and right of the cell where the car is standing at. Then=  // we are assuming that the car here is facing a wall in front, or cell ahead is full.
+    if right cell= full, left cell= empty, then turn left;
+    if left cell= full, right cell= empty, then turn right.
+Then= peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true.
+}
+if= cell that the car is at =AtGoal cell= true, then game ends, else= false.
