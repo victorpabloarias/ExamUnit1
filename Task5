@@ -1,18 +1,20 @@
-// here we will tell the car to drive straight until facing a wall, as in Task1. but there is a small change
-//if facing wall, turn left of right depending on the availability of the cells to both right and left.
-//however, every time there are two empty cells adjacent to both left and right of the one empty cell that is ahead of the car, then turn left.
-// for instance, the car starts at cells 15-15, adn the AtGoal cells is at 3-16
-//when at 12-9, facing upwards, then turn left. when at 11-8 facing left, then turn left. at 7-11, turn left. at 4-15, turn left to AtGoal
-
-class =Car
-loop this
+bool = Move Function
 {
-     peek= if cell in front is empty= true; then proceed to drive one cell ahead (or move=), continue straight as long as the first statement is true. 
-            else= false, then stop the car.
-if false= stop;
-Then= peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true.
-but if cell to the left=empty, then turn left. 
-if the next cell empty, and also both adjacent cells to left and right are empty = true,
-move left
+Peek();
+Move();
 }
-if= cell that the car is at =AtGoal cell= true, then game ends, else= false.
+if blocked = 
+turn()
+bool = Move Function
+{
+Peek();
+Move();
+turn();
+}
+bool = AtGoal
+At Goal
+{
+bool = if (AtGoal) = true
+Console.Writeline = "Victory";
+   !AtGoal = false 
+   }
