@@ -1,13 +1,12 @@
-// my logic here is run the car in straight line, until face a wall, then always turn right, since is the only way to finish the race
-// always turning right, until AtGoal.
-
-class =Car
-loop this
+bool = Move Function
 {
-        peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true. 
-            else= false, then stop the car.
-if false= stop; then turn right.
-Then= peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true.
+Peek()
+Move()
 }
-if= cell that the car is at =AtGoal cell= true, then game ends, else= false.
-
+if blocked = 
+turn()
+}
+At Goal
+bool = if (AtGoal) = true
+Console.Writeline = "Victory"
+   !AtGoal = false 
