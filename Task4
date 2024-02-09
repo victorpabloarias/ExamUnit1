@@ -1,15 +1,14 @@
-//at this point I started thinking about Wolfenstein 3D and how John Romero created the maps of Wolf3d based on mazes and labyrithns., 
-//and there are some proven ways to escape mazes 
-//one is the Hand On Wall rule, left hand in this case, as we will make the carn turn left in any conjuction until eventually reaching AtGoal cell
-//solution similar to Task2, but Task4 the car will always turn left
 
-class =Car
-loop this
+bool = Move Function
 {
-        peek= if cell in front is empty= true; then proceed to drive one cell ahead (or move=), continue straight as long as the first statement is true. 
-            else= false, then stop the car.
-if false= stop;
-Then= peek= if cell in front is empty= true; then proceed to drive one cell ahead, continue straight as long as the first statement is true.
-but if cell to the left=empty, then turn left. 
+Peek();
+Move();
 }
-if= cell that the car is at =AtGoal cell= true, then game ends, else= false.
+if blocked = 
+turn()
+bool = Move Function
+}
+At Goal
+bool = if (AtGoal) = true
+Console.Writeline = "Victory"
+   !AtGoal = false 
